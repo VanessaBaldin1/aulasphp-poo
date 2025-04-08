@@ -21,9 +21,19 @@ $clienteB = new Cliente();
 //Atribuindo valores para os atributos
 $clienteA->nome = "Beto Carrero";
 $clienteA->idade = 75;
-$clienteA->email = "betocarreo@gmail.com";
+$clienteA->email = "betocarrero@gmail.com";
 
 ?>
+
+<h2>Acessando /lendo os dados dos objetos</h2>
+
+<h3>Cliente A</h3>
+<ul>
+    <li><b>Nome:</b> <?=$clienteA->nome?> </li>
+    <li><b>Idade:</b> <?=$clienteA->idade?> </li>
+    <li><b>E-mail:</b> <?=$clienteA->email?> </li>
+</ul>
+
 
 
 <h2>Testes de acesso ao recursos da classe através do objeto</h2>
