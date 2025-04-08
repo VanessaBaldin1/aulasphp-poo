@@ -23,6 +23,10 @@ $clienteA->nome = "Beto Carrero";
 $clienteA->idade = 75;
 $clienteA->email = "betocarrero@gmail.com";
 
+$clienteB->nome = "Roberto Carlos";
+$clienteB->idade = 80;
+$clienteB->email = "robertocarlos@gmail.com";
+
 ?>
 
 <h2>Acessando /lendo os dados dos objetos</h2>
@@ -36,7 +40,14 @@ $clienteA->email = "betocarrero@gmail.com";
     <li><b>E-mail:</b> <?=$clienteA->email?> </li>
 </ul>
 
-
+<h3>Cliente B</h3>
+<div>
+  <?=$clienteB->exibirDados()?> 
+</div>
+<ul>
+    <li><b>Idade:</b> <?=$clienteB->idade?> </li>
+    <li><b>E-mail:</b> <?=$clienteB->email?> </li>
+</ul>
 
 <h2>Testes de acesso ao recursos da classe através do objeto</h2>
 <pre><?=var_dump($clienteA, $clienteB)?></pre>
