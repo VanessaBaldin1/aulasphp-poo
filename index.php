@@ -28,8 +28,10 @@ $clienteA->email = "betocarrero@gmail.com";
 <h2>Acessando /lendo os dados dos objetos</h2>
 
 <h3>Cliente A</h3>
+<div>
+  <?=$clienteA->exibirDados()?> 
+</div>
 <ul>
-    <li><b>Nome:</b> <?=$clienteA->nome?> </li>
     <li><b>Idade:</b> <?=$clienteA->idade?> </li>
     <li><b>E-mail:</b> <?=$clienteA->email?> </li>
 </ul>

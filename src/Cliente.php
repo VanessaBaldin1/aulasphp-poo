@@ -8,7 +8,11 @@ class Cliente
 
 
   //Métodos (são os comportamentos da Classe)
-  public function exibirDados(): void{}
+  public function exibirDados(): void
+  {
+    echo "Este é o cliente... $this->nome";
+
+  }
   public function verificarIdade(int $idade): bool 
   {
     return true;
