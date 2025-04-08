@@ -17,7 +17,15 @@ require_once "src/Cliente.php";
 // Criando objeto/instância da classe
 $clienteA = new Cliente();
 $clienteB = new Cliente();
+
+//Atribuindo valores para os atributos
+$clienteA->nome = "Beto Carrero";
+$clienteA->idade = 75;
+$clienteA->email = "betocarreo@gmail.com";
+
 ?>
+
+
 <h2>Testes de acesso ao recursos da classe através do objeto</h2>
 <pre><?=var_dump($clienteA, $clienteB)?></pre>
 
