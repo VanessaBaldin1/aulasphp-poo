@@ -6,7 +6,7 @@ class Cliente
   private int $idade;
   private string $email;
 
-  // Métodos setters
+  // Métodos setters: Responsável por receber/atribuir dados para as propriedade/atributos
 
   public function setNome(string $nome): void 
   {
@@ -25,4 +25,26 @@ class Cliente
     $this->email = $email;
     
   }
+
+  public function getNome(): string 
+  {
+   
+   return $this->nome;
+  }
+
+  public function getIdade(): int 
+  {
+  
+   return $this->idade;
+
+  }
+
+  public function getEmail(): string 
+  {
+  
+   return $this->email;
+
+  }
+
+
 }

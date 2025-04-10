@@ -18,7 +18,7 @@ require_once "src/Cliente.php";
 $clienteA = new Cliente();
 $clienteB = new Cliente();
 
-//Atribuindo valores para os atributos(diferente a forma de acessar pois são privados)
+//Atribuindo valores para os atributos(SETTERS - diferente a forma de acessar pois são privados)
 $clienteA->setNome("Beto Carrero");
 $clienteA->setIdade(75);
 $clienteA->setEmail("betocarrero@gmail.com");
@@ -30,8 +30,17 @@ $clienteB->setEmail("robertocarlos@gmail.com");
 ?>
 
 <h2>Acessando /lendo os dados dos objetos</h2>
+<ul>
+  <li><b>Nome:</b><?=$clienteA->getNome()?></li>
+  <li><b>Idade:</b><?=$clienteA->getIdade()?></li>
+  <li><b>Email:</b><?=$clienteA->getEmail()?></li>
+</ul>
 
-
+<ul>
+  <li><b>Nome:</b><?=$clienteB->getNome()?></li>
+  <li><b>Idade:</b><?=$clienteB->getIdade()?></li>
+  <li><b>Email:</b><?=$clienteB->getEmail()?></li>
+</ul>
 
 <h2>Testes de acesso ao recursos da classe através do objeto</h2>
 <pre><?=var_dump($clienteA, $clienteB)?></pre>
