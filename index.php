@@ -11,8 +11,16 @@
     <hr>
 
 <?php
+require_once "src/Cliente.php"; //Superclasse 
+require_once "src/PessoaFisica.php"; //Subclasse
+
+$clientePF = new PessoaFisica("Alvaro Garneiro", "alvarog@gmail.com");
+
 
 ?>
+
+<!-- verificação do objeto -->
+<pre><?=var_dump($clientePF)?></pre>
 
 
 
