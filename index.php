@@ -25,12 +25,14 @@ $clienteB = new Cliente("Roberto Carlos", 80, "robertocarlos@gmail.com");
   <li><b>Nome:</b><?=$clienteA->getNome()?></li>
   <li><b>Idade:</b><?=$clienteA->getIdade()?></li>
   <li><b>Email:</b><?=$clienteA->getEmail()?></li>
+  <li><b>Faixa etária:</b><?=$clienteA->verificarIdade()?></li>
 </ul>
 
 <ul>
   <li><b>Nome:</b><?=$clienteB->getNome()?></li>
   <li><b>Idade:</b><?=$clienteB->getIdade()?></li>
   <li><b>Email:</b><?=$clienteB->getEmail()?></li>
+  <li><b>Faixa etária:</b><?=$clienteB->verificarIdade()?></li>
 </ul>
 
 <h2>Testes de acesso ao recursos da classe através do objeto</h2>
