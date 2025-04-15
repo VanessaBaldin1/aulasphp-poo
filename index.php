@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo 02</title>
+  <title>Exemplo 03</title>
 </head>
 <body>
   
-    <h1>PHP com POO - Exemplo 02</h1>
+    <h1>PHP com POO - Exemplo 03</h1>
     <hr>
 
 <?php
@@ -15,17 +15,8 @@
 require_once "src/Cliente.php";
 
 // Criando objeto/instância da classe
-$clienteA = new Cliente();
-$clienteB = new Cliente();
-
-//Atribuindo valores para os atributos(SETTERS - diferente a forma de acessar pois são privados)
-$clienteA->setNome("Beto Carrero");
-$clienteA->setIdade(75);
-$clienteA->setEmail("betocarrero@gmail.com");
-
-$clienteB->setNome("Roberto Carlos");
-$clienteB->setIdade(80);
-$clienteB->setEmail("robertocarlos@gmail.com");
+$clienteA = new Cliente("Beto Carrero", 75, "betocarrero@gmail.com");
+$clienteB = new Cliente("Roberto Carlos", 80, "robertocarlos@gmail.com");
 
 ?>
 
