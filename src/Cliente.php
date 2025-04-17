@@ -4,16 +4,31 @@ class Cliente
   
   private string $nome;
   private string $email;
+  private Situacao $situacao; //nova propriedade de tipo situação enum
 
   //Método CONSTRUTOR (sempre é executado automaticamente ao criar objeto)
-  public function __construct(string $nome, string $email)
+  //Definindo a situação INATIVO como valor padrão para o parâmetro situação no construtor.
+
+  public function __construct(string $nome, string $email, Situacao $situacao = Situacao::INATIVO) //novo parametro já com valor pré-definido
   {
     $this->setNome($nome);
     
     $this->setEmail($email);
+
+    $this->setSituacao($situacao); //chamada do setter
+
   }
 
- 
+ private function setSituacao(Situacao $situacao): void{  //setter e getter
+    $this->situacao = $situacao;
+
+ }
+
+
+ public function getSituacao():Situacao {
+    return $this->situacao;
+ }
+
 
 
   public function setNome(string $nome): void 
