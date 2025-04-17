@@ -19,7 +19,9 @@ class Cliente
 
   }
 
- private function setSituacao(Situacao $situacao): void{  //setter e getter
+  //Visibilidade protegida: desta forma, este método pode ser usado aqui em Cliente(superclasse) e também nas subclasses.
+  //O acesso externo (no nosso caso, em index) continua sendo bloqueado.
+ protected function setSituacao(Situacao $situacao): void{  //setter e getter
     $this->situacao = $situacao;
 
  }
