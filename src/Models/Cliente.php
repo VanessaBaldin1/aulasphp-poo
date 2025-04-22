@@ -1,5 +1,9 @@
 <?php
-class Cliente
+
+// classe abstrata: não pode ser instaciada. (Refere-se a Herança)
+//Com isso, será possivel criar objetos apenas a partir das subclasses.
+
+ abstract class Cliente
 {
   
   private string $nome;

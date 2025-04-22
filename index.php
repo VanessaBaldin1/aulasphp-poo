@@ -20,6 +20,11 @@ require_once "src/Models/PessoaJuridica.php"; //Subclasse
 $clientePF = new PessoaFisica("Alvaro Garneiro", "alvarog@gmail.com", 49, "001.125.256-01");
 $clientePJ = new PessoaJuridica("Samsung S/A", "contato@samsung.com.br", "32.789.555/000-01", 2019, "Samsung do Brasil S/A")
 
+//Código abaixo dará erro, pois Cliente é uma classe abstrata, portanto, não podemos criar objeto a partir dela.
+// $clienteGenerico =  new Cliente("Fulano", "fulano @gmail.com");
+
+
+
 
 ?>
 
