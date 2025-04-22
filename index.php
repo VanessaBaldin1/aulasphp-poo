@@ -22,7 +22,7 @@ $clientePJ = new PessoaJuridica("Samsung S/A", "contato@samsung.com.br", "32.789
 
 //Código abaixo dará erro, pois Cliente é uma classe abstrata, portanto, não podemos criar objeto a partir dela.
 // $clienteGenerico =  new Cliente("Fulano", "fulano @gmail.com");
-
+//var_dump($clienteGenerico); - mostra que objeto, mas quando colocar abstract na superclasse, a mesma da erro.
 
 
 
