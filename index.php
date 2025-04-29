@@ -11,6 +11,12 @@
     <hr>
 
 <?php
+//Sempre que trabalharmos com namespace, será necessário especificar através do 'use' quais classes/enums/funções serão usadadas.
+
+//Colocar sempre 'use' em cada arquivo quando usar o namespace nas classe virtualmente.
+use MeuProjeto\Models\PessoaFisica;
+use MeuProjeto\Models\PessoaJuridica;
+
 require_once "src/Enums/Situacao.php"; //enum
 require_once "src/Models/Cliente.php"; //Superclasse 
 require_once "src/Models/PessoaFisica.php"; //Subclasse
@@ -19,12 +25,6 @@ require_once "src/Models/PessoaJuridica.php"; //Subclasse
 
 $clientePF = new PessoaFisica("Alvaro Garneiro", "alvarog@gmail.com", 49, "001.125.256-01");
 $clientePJ = new PessoaJuridica("Samsung S/A", "contato@samsung.com.br", "32.789.555/000-01", 2019, "Samsung do Brasil S/A")
-
-//Código abaixo dará erro, pois Cliente é uma classe abstrata, portanto, não podemos criar objeto a partir dela.
-// $clienteGenerico =  new Cliente("Fulano", "fulano @gmail.com");
-//var_dump($clienteGenerico); - mostra que objeto, mas quando colocar abstract na superclasse, a mesma da erro.
-
-
 
 ?>
 
