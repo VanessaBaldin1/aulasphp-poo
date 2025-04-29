@@ -14,6 +14,8 @@
 //Sempre que trabalharmos com namespace, será necessário especificar através do 'use' quais classes/enums/funções serão usadadas.
 
 //Colocar sempre 'use' em cada arquivo quando usar o namespace nas classe virtualmente.
+
+use MeuProjeto\Calculadora;
 use MeuProjeto\Models\PessoaFisica;
 use MeuProjeto\Models\PessoaJuridica;
 
@@ -22,7 +24,13 @@ require_once "vendor/autoload.php";
 
 
 $clientePF = new PessoaFisica("Alvaro Garneiro", "alvarog@gmail.com", 49, "001.125.256-01");
-$clientePJ = new PessoaJuridica("Samsung S/A", "contato@samsung.com.br", "32.789.555/000-01", 2019, "Samsung do Brasil S/A")
+$clientePJ = new PessoaJuridica("Samsung S/A", "contato@samsung.com.br", "32.789.555/000-01", 2019, "Samsung do Brasil S/A");
+// Acessando um método estático (ou seja, sem passar por um objeto)
+
+$total = Calculadora::somar(10, 5);
+echo $total;
+
+
 
 ?>
 

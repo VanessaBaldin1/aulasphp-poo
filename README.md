@@ -1,5 +1,16 @@
 # Exemplos de programação orientada a objetos usando PHP
 
+## 07_autoload-de-classes-usando-composer
+
+- Download e instalação do Composer na máquina
+- Criação e configuração do `composer.json` para utilização do autoload de acordo com a `psr-4`
+- Execução do comando `composer dumpautoload` via CLI para gerar a pasta `vendor` e o `autoload.php`
+- Substituição de todos os `requires` individuais por um único apontando para o autoload
+- Exemplo de uso de uma classe abstrata(que não pode ser instaciada) e método `static` (que pode ser acessado diretamente da classe, sem objetivo). Exemplo:
+```php
+Calculadora::somar();
+```
+
 ## 06_namespaces
 
 - Reorganização virtual/lógica usando namespace (espaços nomeados)
