@@ -1,7 +1,12 @@
 <?php
+namespace MeuProjeto\Models; 
 
-// classe abstrata: não pode ser instaciada. (Refere-se a Herança)
-//Com isso, será possivel criar objetos apenas a partir das subclasses.
+//Usamos o 'use' para indicar a utilização de outras classes /enums que temos
+use MeuProjeto\Enums\Situacao;
+
+//Usamos o 'use' também para indicar a utilização de classes internas do PHP
+use InvalidArgumentException;
+
 
  abstract class Cliente
 {

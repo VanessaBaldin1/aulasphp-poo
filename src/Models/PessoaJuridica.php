@@ -1,5 +1,8 @@
 <?php
-// Classe Final: não permite herança, ou seja, não será possível criar uma subclasse que extenda PessoaJuridica.
+namespace MeuProjeto\Models; 
+
+//Usamos o 'use' para indicar a utilização de outras classes /enums que temos
+use MeuProjeto\Enums\Situacao;
 
 final class PessoaJuridica extends Cliente {
     private string $cnpj;
